@@ -18,8 +18,6 @@ object Day4Exercise_Collect extends App {
     def isDefinedAt(n: Int) = n > 0 && n%2 == 0
   }
 
-  println(getEvenSquare(3))
-
   val getOddCubes = new PartialFunction[Int,Int] {
     def apply(n: Int): Int = n*n*n
     def isDefinedAt(n: Int) = n >0 && n%2 == 1
