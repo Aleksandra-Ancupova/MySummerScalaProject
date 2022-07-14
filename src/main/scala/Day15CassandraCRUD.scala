@@ -65,6 +65,5 @@ object Day15CassandraCRUD extends App {
   val userResultsLT = session.execute("SELECT * FROM vs_keyspace.users_by_country WHERE country = 'LT'")
   userResultsLT.forEach(row => println(row))
 
-
   cluster.close()
 }
